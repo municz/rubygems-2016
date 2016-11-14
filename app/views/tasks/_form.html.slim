@@ -1,0 +1,10 @@
+= simple_form_for @task, :html => { :class => "form-horizontal", multipart: true } do |f|
+  = f.input :title
+  = f.input :content
+  = f.association :user
+  = f.input :image, as: :file
+
+  = f.button :submit, :class => 'btn-primary'
+
+  '
+  = link_to t('.cancel', :default => t("helpers.links.cancel")), tasks_path, :class => 'btn btn-default'

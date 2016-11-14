@@ -1,0 +1,10 @@
+en:
+  hello: "Hello world"
+
+  tasks:
+    index:
+      title: Úkolníček
+
+  flashes:
+    tasks:
+      create: Pracuj!
